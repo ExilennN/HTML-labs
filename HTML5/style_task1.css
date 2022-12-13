@@ -1,0 +1,49 @@
+body {
+    font-family: Calibri;
+    display: flex;
+    justify-content: center;
+    background-color:#f0f0f0 ;
+}
+#mainImage { width: 70px; height: 70px;}
+#caption_left {
+    position: relative;
+    bottom: 25px;
+    font-family: "Fira Code";
+    font-size: 20px;
+}
+#contentBlock { width: 580px; margin-top: 20px}
+.caption_right {
+    position: relative;
+    color: gray;
+    float: right;
+    font-size: 12px;
+}
+#caption_right1 {top: 30px;}
+#caption_right2 {bottom: 33px;}
+#tableBlock{margin-top: 15px;}
+.tableBlock_item {
+    border: 2px solid #e1e1e1; border-bottom: 0px;
+    height: 150px;
+}
+.textBlock {display: flex; flex-direction: column;}
+.imageBlock { align-self: center; }
+.imageBorder{
+    display: flex; justify-content: center;
+    width: 120px; height: 120px;
+    border: 1px solid #e1e1e1;
+    background-color: white; border-radius: 50%;
+}
+.imageInside{
+    display: flex; justify-content: center;
+    align-self: center;
+    width: 110px; height: 110px;
+    background-color: #f5f5f5; border-radius: 50%;
+}
+.image { align-self: center; width: 70px; height: 70px; }
+.imageBlock {align-self: center;}
+.tableBlock_item {display: flex; flex-direction: row; padding-right: 35px; padding-left: 35px; justify-content: space-between;}
+.tableBlock_item:last-child{border-bottom: 2px solid  #e1e1e1;}
+.tableBlock_item:nth-child(odd){background-color: whitesmoke; }
+.tableBlock_item:nth-child(even){background-color: #f0f0f0; }
+.tableBlock_item:first-child {text-align: center; padding: 0px; display: block; }
+.tableBlock_item:last-child {text-align: center;  display: block; }
