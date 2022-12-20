@@ -1,0 +1,43 @@
+body {
+    background-color: #282833;
+    display: flex; flex-direction: column;
+    justify-content: center; align-content: center;
+}
+span {
+    color: white; height: fit-content;
+    position: absolute; left: 230px; display: none;
+}
+#a {
+    position: relative; top: 200px;
+    display: flex; flex-direction: column;
+    align-self: center; justify-content: center; align-content: center;
+}
+#main {
+    display: flex; perspective: 700px;
+    align-self: center; text-align: center; justify-content: center; align-content: center;
+    border: 6px solid white;
+    width: 600px; height: 400px;
+}
+#first {
+    width: 300px;
+    background-color: firebrick;
+    transform: rotateY(0deg);
+    position: relative;
+    transition: 1s ease;
+}
+#second {
+    width: 300px;
+    background-color: orange;
+    transform: rotateY(0deg);
+    position: relative;
+    transition: 1s ease;
+}
+#main:hover div:nth-child(1){
+    transform: rotateY(70deg);
+}
+#main:hover div:nth-child(2){
+    transform: rotateY(-70deg);
+}
+#a:hover span{
+    display: block;
+}
